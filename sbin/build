@@ -1,0 +1,14 @@
+#!/bin/bash
+
+bin=`dirname $0`
+base=$(cd "$bin";cd ..;pwd)
+
+rm -rf $base/build
+mkdir -p $base/build
+
+cd $base/build
+cmake ..
+
+make
+
+cd ..

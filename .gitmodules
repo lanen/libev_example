@@ -1,0 +1,7 @@
+[submodule "thirdparty"]
+    path = thirdparty
+    url = https://github.com/lanen/cpp_thirdparty.git
+[submodule "lib"]
+    path = lib
+    url = https://github.com/lanen/cpp_thirdparty_lib.git
+ 
