@@ -1,0 +1,22 @@
+{% if namespace %}
+#ifndef INCLUDE_{{namespace|upper}}_{{ name|uc }}_H_
+#define INCLUDE_{{namespace|upper}}_{{ name|uc }}_H_
+namespace {{namespace}} {{ '{' }}
+{% else %}}
+#ifndef INCLUDE_{{ name|uc }}_H_
+#define INCLUDE_{{ name|uc }}_H_
+{% endif %}
+
+class {{name}} {
+ public:
+    {{name}}();
+
+    ~{{name}}();
+};
+{% if namespace %}
+{{ '}' }}  // namespace {{namespace}}
+#endif  // INCLUDE_{{namespace|upper}}_{{ name|uc }}_H_
+{% else %}}
+#endif  // INCLUDE_{{ name|uc }}_H_
+{% endif %}
+

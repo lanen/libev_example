@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git submodule add https://github.com/lanen/cpp_thirdparty.git thirdparity
+git submodule add https://github.com/lanen/cpp_thirdparty_lib.git lib
